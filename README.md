@@ -1,4 +1,7 @@
 # Custom Build
+Allow customizing build configuration without ejecting webpack configuration (ng eject)
+[See more](https://github.com/just-jeb/angular-builders/tree/master/packages/custom-webpack)
+
 ## Install
 ```
 npm i moment-locales-webpack-plugin
@@ -56,6 +59,14 @@ index ff49f7c..7cb80b1 100644
 
 
 # Building K8s APP
+Kubernetes for Prod, Tilt for Dev
+
+Modern apps are made of too many services. They're everywhere and in constant communication.
+[See more](https://github.com/tilt-dev/tilt)
+## Install (linux)
+```
+curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
+```
 
 ## Dockerfile
 ```
@@ -106,4 +117,10 @@ docker_build('frontend-angular', '.')
 k8s_yaml('serve.yaml')
 k8s_resource('frontend-angular', port_forwards=4200)
 
+```
+
+==> Run `titl` with this command 
+
+``` 
+tilt up
 ```

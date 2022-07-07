@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
     "@ngtools/webpack": "*",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "moment-locales-webpack-plugin": "^1.2.0",
     "ngc-webpack": "^4.1.2",
     "rxjs": "~6.5.4",
